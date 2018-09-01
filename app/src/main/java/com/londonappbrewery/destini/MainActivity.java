@@ -27,13 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(myStoryIndex == 1){
-                    story_text.setText(R.string.T3_Story);
-                    button1.setText(R.string.T3_Ans1);
-                    button2.setText(R.string.T3_Ans2);
-                    myStoryIndex = 3;
-                }
-                else if(myStoryIndex == 2){
+                if(myStoryIndex == 1 || myStoryIndex == 2){
                     story_text.setText(R.string.T3_Story);
                     button1.setText(R.string.T3_Ans1);
                     button2.setText(R.string.T3_Ans2);
